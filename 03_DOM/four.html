@@ -25,5 +25,15 @@
     }
     optilang("go")
     optilang("ruby")
+
+    //edit
+    const seclang = document.querySelector('li:nth-child(2)')
+   // seclang.innerHTML= 'pyhton'
+
+    const newli = document.createElement("li")
+    newli.textContent = "mojo"
+    seclang.replaceWith(newli)
+
+    //remove
 </script>
 </html>
