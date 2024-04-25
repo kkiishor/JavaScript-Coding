@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <div>
+        <h1 class="one">hello</h1>
+        <p id="para">Lorem ipsum dolor sit.</p>
+    </div>
+    
+</body>
+<script>
+    const span = document.createElement('span')
+    span.textContent= " okay"
+    // console.log(span);
+    const beta = document.querySelector('.one')
+    //console.log(beta);
+    beta.appendChild(span)
+
+    const ptag =  document.querySelector('#para')
+    ptag.setAttribute('class', 'two')
+
+    // const test = document.querySelector('.two')
+    // console.log(test);
+
+    const culur= document.querySelector('span')
+    const father = culur.parentElement
+    father.style.backgroundColor= 'green'
+
+    culur.style.color="red"
+
+    const div = document.querySelector('span')
+    div.remove()
+</script>
+
+</html>
