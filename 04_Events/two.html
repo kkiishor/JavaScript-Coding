@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+//     const print= function() {
+//         document.querySelector('h1').innerHTML = "best day";
+//     }
+
+//    const changeme = setTimeout(print, 2000)
+
+//     // 
+//     document.querySelector('#stop').addEventListener('click', function () {
+//         clearTimeout(changeme)
+//         console.log("stopped");
+//     })
+let domo;
+document.querySelector('#start').addEventListener('click', function () {
+  demo =  setInterval(function () {
+    // alert("kishor");
+    console.log("kishor", Date.now());
+},500)
+
+})
+
+document.querySelector('#stop').addEventListener('click', function () {
+    
+    clearInterval(demo);
+
+})
+
+</script>
+</html>
