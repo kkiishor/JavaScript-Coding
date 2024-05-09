@@ -39,12 +39,7 @@
     xhr.open('GET', requestUrl);
     
     xhr.onreadystatechange = function () {
-      let data = JSON.parse(this.responseText);
-      document.querySelector('h2').innerHTML = data.name;
-      document.querySelector('p').textContent = data.followers;
-
-
-
+      console.log(xhr.responseText);
     }
     
     
