@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLhttprequest</title>
+</head>
+<body>
+    <script>
+        const hrx = new XMLHttpRequest();
+        hrx.open('Get', ' https://catfact.ninja/fact');
+        hrx.responseType = 'blob';
+        hrx.send();
+
+        hrx.onload = function () {
+            console.log(hrx.response);
+        }
+        xhr.onerror = function() {
+           alert("Request failed");
+        };
+    </script>
+    
+</body>
+</html>
