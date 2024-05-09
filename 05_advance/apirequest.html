@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cards">
+        <article class="card">
+          <header>
+            <h2>head</h2>
+          </header>
+          <div id="image">
+
+          </div>
+            <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago. </p>
+          </div>
+        </article>
+</body>
+<script>
+    // const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('GET', requestUrl);
+    // xhr.onreadystatechange = function () {
+    //     console.log(xhr.readyState);
+    //     if(xhr.readyState === 4){
+    //         const data = JSON.parse(this.responseText);
+    //         console.log(typeof data);
+    //         console.log(data.followers);
+    //         console.log(data.avatar_url);
+    //     }
+    // }
+    // xhr.send();
+
+
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+    
+    xhr.onreadystatechange = function () {
+      let data = JSON.parse(this.responseText);
+      document.querySelector('h2').innerHTML = data.name;
+      document.querySelector('p').textContent = data.followers;
+
+
+
+    }
+    
+    
+    xhr.send();
+
+</script>
+</html>
