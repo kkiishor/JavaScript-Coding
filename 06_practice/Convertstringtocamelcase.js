@@ -24,6 +24,9 @@ function toCamelCase(str){
 const print = toCamelCase("the-stealth-warrior")
 const print1 = toCamelCase("The_Stealth_Warrior")
 const print2 = toCamelCase("The_Stealth-Warrior")
+const print3 = toCamelCase("kishor-is_best")
+
 console.log(print);
 console.log(print1);
 console.log(print2);
+console.log(print3);
