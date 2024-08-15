@@ -29,7 +29,11 @@ const items = [
 
 //   console.log(items);
 
-const arr = items.filter((item) => item.published >= 2000)
+// const arr = items.filter((item) => item.published >= 2000)
 
-console.log(arr)
+// console.log(arr)
+
+
+const pricetopay = items.reduce((acc, items) => acc + items.published, 0 )
   
+console.log(pricetopay);
